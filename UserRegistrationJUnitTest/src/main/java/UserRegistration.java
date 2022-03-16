@@ -158,7 +158,7 @@ public class UserRegistration {
      */
     public boolean testValidatePassword(String password) throws InvalidDetailsException {
         try {
-            if (!validateMobileNumber(password)) {
+            if (!validatePassword(password)) {
                 throw new InvalidDetailsException("Entered password is invalid");
             }
             else {
